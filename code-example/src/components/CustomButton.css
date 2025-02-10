@@ -8,5 +8,5 @@
 
 .custom-button.disabled {
   cursor: not-allowed;
-  background-color: lightgray;
+  background-color: gray;
 }

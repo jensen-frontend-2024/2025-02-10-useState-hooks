@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { CustomButton } from './CustomButton';
 import { Header } from './Header';
+import { AuthBadge } from './AuthBadge';
 
 function App() {
+  const [authenticated, setAuthenticated] = useState(true);
   const [count, setCount] = useState(0);
   // let count = 0; // Let's try a regular variabel
 
@@ -26,9 +28,13 @@ function App() {
     setCount(0);
   };
 
+  const updateAuthenticated = () => {
+    setAuthenticated((prev) => !prev);
+  };
+
   return (
     <>
-      <Header />
+      <Header authenticated={authenticated} updateAuthenticated={updateAuthenticated} />
       <section className="count-wrapper g-container">
         <CustomButton disabled={derivedDisableButton} onClick={decrement}>
           Decrement
@@ -41,6 +47,7 @@ function App() {
           Reset Count
         </CustomButton>
       </section>
+      <AuthBadge authenticated={authenticated} />
     </>
   );
 }

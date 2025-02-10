@@ -1,5 +1,6 @@
 /* index.css is for global styling and other css-imports */
 @import url('./components/App.css');
+@import url('./components/AuthBadge.css');
 @import url('./components/CustomButton.css');
 @import url('./components/Header.css');
 
