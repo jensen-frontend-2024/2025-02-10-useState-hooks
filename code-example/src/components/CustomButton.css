@@ -1,0 +1,12 @@
+.custom-button {
+  background-color: lightblue;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.custom-button.disabled {
+  cursor: not-allowed;
+  background-color: lightgray;
+}

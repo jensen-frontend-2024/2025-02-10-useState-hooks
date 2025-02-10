@@ -1,7 +1,13 @@
 /* index.css is for global styling and other css-imports */
+@import url('./components/App.css');
+@import url('./components/CustomButton.css');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  padding: 2rem;
 }
