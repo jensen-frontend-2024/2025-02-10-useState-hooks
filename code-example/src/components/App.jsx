@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CustomButton } from './CustomButton';
+import { Header } from './Header';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,7 +28,8 @@ function App() {
 
   return (
     <>
-      <section className="count-wrapper">
+      <Header />
+      <section className="count-wrapper g-container">
         <CustomButton disabled={derivedDisableButton} onClick={decrement}>
           Decrement
         </CustomButton>

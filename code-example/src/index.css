@@ -1,6 +1,7 @@
 /* index.css is for global styling and other css-imports */
 @import url('./components/App.css');
 @import url('./components/CustomButton.css');
+@import url('./components/Header.css');
 
 * {
   box-sizing: border-box;
@@ -9,5 +10,9 @@
 }
 
 body {
-  padding: 2rem;
+  padding-top: 37px;
+}
+
+.g-container {
+  padding-inline: 2rem;
 }
