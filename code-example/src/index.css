@@ -1,0 +1,7 @@
+/* index.css is for global styling and other css-imports */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
